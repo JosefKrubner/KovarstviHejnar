@@ -1,0 +1,169 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, q, blockquote,
+a, p, u, em, i, b, strong, img,
+ol, ul, li,
+form, label, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, footer, header, nav, section, main {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.page-header-wrapper {
+  width: 100%;
+  height: 250px;
+  background-color: hsl(130deg, 5%, 24%);
+}
+
+.page-header {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Academy Engraved LET;
+}
+.page-header .logo {
+  height: 100%;
+  display: inline-block;
+}
+.page-header .logo img {
+  height: 235px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 2rem;
+}
+.page-header nav {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  height: 100%;
+}
+.page-header nav a {
+  display: inline-block;
+  height: 100%;
+  margin-right: 2rem;
+}
+.page-header nav a:last-of-type {
+  margin-right: 0px;
+}
+.page-header nav a div {
+  position: relative;
+  display: inline-block;
+  top: 106.25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 37.5px;
+  color: hsl(30deg, 20%, 96%);
+}
+.page-header nav a:hover {
+  cursor: pointer;
+}
+.page-header nav a:hover div {
+  border-bottom: 1px solid hsl(30deg, 20%, 96%);
+}
+
+.page-footer-wrapper {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(130deg, 5%, 24%);
+}
+
+.page-footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.page-footer .copyright {
+  display: inline-block;
+  height: 100%;
+}
+.page-footer .copyright .copyright-content {
+  position: absolute;
+  left: 1em;
+  color: hsl(30deg, 20%, 96%);
+  font-size: 25px;
+  top: 12.5px;
+}
+.page-footer .copyright:hover .copyright-content {
+  color: hsl(108deg, 24%, 48%);
+}
+.page-footer .socials {
+  display: inline-block;
+  position: absolute;
+  right: 1em;
+}
+.page-footer .socials i {
+  display: inline-block;
+  position: relative;
+  font-size: 45px;
+  top: 5px;
+  margin-left: 0.25em;
+  color: hsl(30deg, 20%, 96%);
+}
+.page-footer .socials i:hover {
+  color: hsl(108deg, 24%, 48%);
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Academy Engraved LET";
+  src: url(../fonts/Academy_Engraved_LET_Plain.ttf) format("ttf");
+  src: url(../fonts/Academy_Engraved_LET_Plain.woff) format("woff");
+}
+@font-face {
+  font-family: "Sorts Mill Goudy";
+  src: url(../fonts/Sorts_Mill_Goudy_Italic.ttf) format("ttf");
+  src: url(../fonts/Sorts_Mill_Goudy_Italic.woff) format("woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sorts Mill Goudy";
+  src: url(../fonts/Sorts_Mill_Goudy_Regular.ttf) format("ttf");
+  src: url(../fonts/Sorts_Mill_Goudy_Regular.woff) format("woff");
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(30deg, 20%, 96%);
+  font-family: Sorts Mill Goudy;
+  font-size: 16px;
+}
+
+.content-wrapper {
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 250px - 50px);
+  background-color: hsl(30deg, 20%, 96%);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 250px - 50px);
+}/*# sourceMappingURL=main.css.map */
