@@ -1,8 +1,8 @@
 $max-width: 1200px;
 $max-header-width: 1600px;
 $max-footer-width: 1600px;
-$main-header-height: 250px;
-$main-footer-height: 50px;
+$main-header-height: calc(100vh * 0.2);
+$main-footer-height: calc(100vh * 0.05);
 
 $font-decor: Academy Engraved LET;
 

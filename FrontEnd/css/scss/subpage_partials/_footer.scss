@@ -35,21 +35,21 @@
         position: absolute;
         right: 1em;
 
-        
-
-        i {
-            display: inline-block;
-            position: relative;
-            font-size: calc(0.9 * $main-footer-height);
-            top: calc(0.1 * $main-footer-height);
-
-            margin-left: .25em;
-
-            color: $text-light-color;
-
-            &:hover {
-                color: $secondary-color;
-                cursor: pointer;
+        a {
+            i {
+                display: inline-block;
+                position: relative;
+                font-size: calc(0.8 * $main-footer-height);
+                top: calc(0.1 * $main-footer-height);
+    
+                margin-left: .25em;
+    
+                color: $text-light-color;
+    
+                &:hover {
+                    color: $secondary-color;
+                    cursor: pointer;
+                }
             }
         }
     }
