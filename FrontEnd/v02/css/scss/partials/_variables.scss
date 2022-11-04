@@ -1,0 +1,21 @@
+$max-width: 1200px;
+$max-width-wide: 1600px;
+$max-header-width: 1600px;
+$max-footer-width: 1600px;
+$main-header-height: calc(100vh * 0.2);
+$main-footer-height: calc(100vh * 0.05);
+$content-header-height: calc(.7 * $main-header-height);
+$content-footer-height: calc(1.0 * $main-footer-height);
+
+$font-decor: Academy Engraved LET;
+
+$font-plain: Sorts Mill Goudy;
+
+$main-nav-font-size: 0.15 * $main-header-height;
+
+$primary-color: hsl(130 5% 24%);
+$secondary-color: hsl(108, 24%, 48%);
+$tertiary-color: hsl(30, 20%, 96%);
+
+$text-light-color: $tertiary-color;
+$text-dark-color: $primary-color;

@@ -1,0 +1,48 @@
+.landing-page-portfolio-wrapper {
+    width: 100%;
+    margin: 5vh 0;
+
+    .landing-page-portfolio-header {
+        font-size: 4vh;
+        // font-weight: bold;
+        text-align: center;
+        padding: 1em 0;
+        color: $text-light-color;
+        background-color: $primary-color;
+        border-radius: 2.5vh 2.5vh 0vh 0vh;
+    }
+
+    .portfolio-item {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .landing-page-portfolio-footer {
+        position: relative;
+        font-size: calc(.5 * $content-footer-height);
+        // font-weight: bold;
+        text-align: center;
+        color: $text-light-color;
+        background-color: $primary-color;
+        border-radius: 0 0 2.5vh 2.5vh;
+        height: $content-footer-height;
+
+        .to-portfolio {
+            position: absolute;
+            left: .5em;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .scroll-up {
+            position: absolute;
+            right: .5em;
+            height: 100%;
+            display: inline-block;
+
+        }
+    }
+}
