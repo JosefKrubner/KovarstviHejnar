@@ -1,48 +1,70 @@
-.landing-page-portfolio-wrapper {
-    width: 100%;
-    margin: 5vh 0;
+.landing-page-wrapper {
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
-    .landing-page-portfolio-header {
-        font-size: 4vh;
-        // font-weight: bold;
-        text-align: center;
-        padding: 1em 0;
-        color: $text-light-color;
-        background-color: $primary-color;
-        border-radius: 2.5vh 2.5vh 0vh 0vh;
+    
+
+    img.background-image {
+        z-index: 0;
+
+        object-fit: cover;
+        object-position: bottom center;
+        max-width: 100%;
+        min-height: 100%;
+        filter: brightness(50%);
     }
 
-    .portfolio-item {
-        width: 50%;
+    .landing-page-content {
 
-        img {
-            width: 100%;
-        }
-    }
-
-    .landing-page-portfolio-footer {
-        position: relative;
-        font-size: calc(.5 * $content-footer-height);
-        // font-weight: bold;
-        text-align: center;
-        color: $text-light-color;
-        background-color: $primary-color;
-        border-radius: 0 0 2.5vh 2.5vh;
-        height: $content-footer-height;
-
-        .to-portfolio {
+        max-width: $max-width-wide;
+       
+        .title {
+            z-index: 10;
+    
             position: absolute;
-            left: .5em;
-            height: 100%;
-            display: inline-block;
+            top: 45vh;
+            left: 5vw;
+            
+            
+            color: $text-light-color;
+            font-family: $font-plain;
+    
+            .title-header {
+                font-size: 7.5vh;
+            }
+    
+            .title-subheader {
+                font-size: 3.5vh;
+            }
+    
         }
 
-        .scroll-up {
-            position: absolute;
-            right: .5em;
-            height: 100%;
-            display: inline-block;
+        .main-nav {
+            z-index: 10;
 
+            position: absolute;
+            right: 5vw;
+            top: 15vh;
+
+            .nav-item {
+                display: block;
+                position: relative;
+
+                color: $text-light-color;
+                font-family: $font-plain;
+                font-size: 4vh;
+                padding: .25em 0;
+
+                transition: color 500ms;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+                
+            }
         }
     }
 }
