@@ -1,0 +1,91 @@
+.portfolio-page-wrapper {
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $primary-color;
+
+    img.background-image {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        z-index: 0;
+
+        object-fit: cover;
+        object-position: bottom center;
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+    }
+
+    .portfolio-page-content {
+
+        .main-nav {
+            z-index: 10;
+
+            position: absolute;
+            right: 5vw;
+            top: 15vh;
+
+            .nav-item {
+                display: block;
+                position: relative;
+
+                color: $text-light-color;
+                font-family: $font-plain;
+                font-size: 4vh;
+                padding: .25em 0;
+
+                transition: color 500ms;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+                
+            }
+
+            .active-nav-item {
+                color: $secondary-color;
+                cursor: default;
+            }
+        }
+    }
+
+    .next-page {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .previous-page {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .next-page, .previous-page {
+        z-index: 10;
+
+        width: 100%;
+        height: 7vh;
+
+        color: $text-light-color;
+        font-size: 5vh;
+
+        text-align: center;
+        
+        i {
+            position: absolute;
+            bottom: 1vh;
+        }
+
+        transition: color 500ms, background-color 500ms;
+
+        &:hover {
+            color: $secondary-color;
+            background-color: transparentize($tertiary-color, .9);
+        }
+    }
+}

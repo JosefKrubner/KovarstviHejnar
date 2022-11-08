@@ -13,9 +13,9 @@
     <title>Umělecké kovářství Hejnar</title>
 </head>
 <body>
-    <div class="landing-page-wrapper">
+    <div class="landing-page-wrapper" id="landing-page">
         
-        <img class="background-image" src="img/landing_page_background.png" alt="Hammer background image">
+        <img class="background-image" src="img/landing_page_background.png">
 
         <div class="landing-page-content">
             <div class="title">
@@ -24,13 +24,93 @@
             </div>
 
             <nav class="main-nav">
-                <a href="#" class="nav-item">O mně.</a>
-                <a href="#" class="nav-item">Portfolio.</a>
-                <a href="#" class="nav-item">Kontakt.</a>
+                <a class="nav-item"><br></a>
+                <a href="#about" class="nav-item">O mně.</a>
+                <a href="#portfolio" class="nav-item">Portfolio.</a>
+                <a href="#contact" class="nav-item">Kontakt.</a>
+            </nav>
+        </div>
+        
+        <a class="next-page"href="#about">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </div>
+
+    <div class="about-page-wrapper" id="about">
+        <a class="previous-page" href="#landing-page">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        
+        <img class="background-image" src="img/about_page_background.png">
+
+        <div class="about-page-content">
+
+            <nav class="main-nav">
+                <a href="#landing-page" class="nav-item">Domů.</a>
+                <a href="#about" class="nav-item active-nav-item">O mně.</a>
+                <a href="#portfolio" class="nav-item">Portfolio.</a>
+                <a href="#contact" class="nav-item">Kontakt.</a>
             </nav>
         </div>
 
+        <a class="next-page" href="#portfolio">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </div>
+
+    <div class="portfolio-page-wrapper" id="portfolio">
+        <a class="previous-page" href="#about">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
         
+        <img class="background-image" src="img/portfolio_page_background.png">
+
+        <div class="portfolio-page-content">
+
+            <nav class="main-nav">
+                <a href="#landing-page" class="nav-item">Domů.</a>
+                <a href="#about" class="nav-item">O mně.</a>
+                <a href="#portfolio" class="nav-item active-nav-item">Portfolio.</a>
+                <a href="#contact" class="nav-item">Kontakt.</a>
+            </nav>
+        </div>
+
+        <a class="next-page" href="#contact">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </div>
+
+    <div class="contact-page-wrapper" id="contact">
+        <a class="previous-page" href="#portfolio">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        
+        <img class="background-image" src="img/contact_page_background.png">
+
+        <div class="contact-page-content">
+
+            <nav class="main-nav">
+                <a href="#landing-page" class="nav-item">Domů.</a>
+                <a href="#about" class="nav-item">O mně.</a>
+                <a href="#portfolio" class="nav-item">Portfolio.</a>
+                <a href="#contact" class="nav-item active-nav-item">Kontakt.</a>
+            </nav>
+        </div>
+
+        <div class="page-footer">
+            <a href="#landing-page" class="copyright">
+                &copy; 2022 Umělecké kovářství Hejnar
+            </a>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100085671233991" target="_blank" title="Umělecké kovářství Hejnar – Facebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/kovarstvi_hejnar/" target="_blank" title="Umělecké kovářství Hejnar – Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -6,9 +6,9 @@
 
 // @import "subpage_partials/_header.scss";
 @import "subpage_partials/_landingPage.scss";
-// @import "subpages_partials/_about.scss";
-// @import "subpages_partials/_portfolio.scss";
-// @import "subpages_partials/_contact.scss";
+@import "subpage_partials/_about.scss";
+@import "subpage_partials/_portfolio.scss";
+@import "subpage_partials/_contact.scss";
 // @import "subpage_partials/_footer.scss";
 
 @font-face {
@@ -34,6 +34,13 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: hidden;
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+    // -ms-overflow-style: none;  /* IE and Edge */
+    // scrollbar-width: none;  /* Firefox */
+    
     // border: 1px solid black;	
     // cursor: url('../img/cursor_hammer_light.png'), auto;
 }
