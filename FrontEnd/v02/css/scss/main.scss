@@ -5,6 +5,7 @@
 // @import "partials/_mixins.scss";
 
 // @import "subpage_partials/_header.scss";
+@import "subpage_partials/_layout.scss";
 @import "subpage_partials/_landingPage.scss";
 @import "subpage_partials/_about.scss";
 @import "subpage_partials/_portfolio.scss";
@@ -31,10 +32,17 @@
     font-style: normal;
 }
 
+body {
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow: hidden;
+    font-size: 16px;
+
+    // font-family: $font-plain;
+
     // &::-webkit-scrollbar {
     //     display: none;
     // }

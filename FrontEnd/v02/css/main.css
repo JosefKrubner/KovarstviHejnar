@@ -27,12 +27,17 @@ table {
   border-spacing: 0;
 }
 
-.landing-page-wrapper {
+body {
+  overflow: hidden;
+}
+
+.page-wrapper {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: hsl(231deg, 18%, 14%);
 }
-.landing-page-wrapper img.background-image {
+.page-wrapper img.background-image {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -45,11 +50,59 @@ table {
   height: 100%;
   filter: brightness(50%);
 }
-.landing-page-wrapper .landing-page-content {
-  position: relative;
+.page-wrapper .page-content {
   height: 100%;
-  width: 100%;
 }
+.page-wrapper .page-content .main-nav {
+  z-index: 10;
+  position: absolute;
+  right: 5vw;
+  top: 15vh;
+}
+.page-wrapper .page-content .main-nav .nav-item {
+  display: block;
+  position: relative;
+  color: hsl(190deg, 7%, 84%);
+  font-family: Sorts Mill Goudy;
+  font-size: 4vh;
+  padding: 0.25em 0;
+  transition: color 500ms;
+}
+.page-wrapper .page-content .main-nav .nav-item:hover {
+  color: hsl(26deg, 66%, 41%);
+}
+.page-wrapper .page-content .main-nav .active-nav-item {
+  color: hsl(26deg, 66%, 41%);
+  cursor: default;
+}
+.page-wrapper .next-page {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.page-wrapper .previous-page {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.page-wrapper .next-page, .page-wrapper .previous-page {
+  z-index: 10;
+  width: 100%;
+  height: 7vh;
+  color: hsl(190deg, 7%, 84%);
+  font-size: 5vh;
+  text-align: center;
+  transition: color 500ms, background-color 500ms;
+}
+.page-wrapper .next-page i, .page-wrapper .previous-page i {
+  position: absolute;
+  bottom: 1vh;
+}
+.page-wrapper .next-page:hover, .page-wrapper .previous-page:hover {
+  color: hsl(26deg, 66%, 41%);
+  background-color: rgba(211, 216, 217, 0.1);
+}
+
 .landing-page-wrapper .landing-page-content .title {
   z-index: 10;
   position: absolute;
@@ -64,250 +117,70 @@ table {
 .landing-page-wrapper .landing-page-content .title .title-subheader {
   font-size: 3.5vh;
 }
-.landing-page-wrapper .landing-page-content .main-nav {
-  z-index: 10;
+
+.about-page-wrapper .about-page-content .about-text {
   position: absolute;
-  right: 5vw;
-  top: 15vh;
-}
-.landing-page-wrapper .landing-page-content .main-nav .nav-item {
-  display: block;
-  position: relative;
+  top: 10vh;
+  left: 5vw;
+  overflow-y: scroll;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover*/
+  width: 75vw;
+  height: 80vh;
   color: hsl(190deg, 7%, 84%);
-  font-family: Sorts Mill Goudy;
-  font-size: 4vh;
-  padding: 0.25em 0;
+  font-size: 1.5vw;
+  line-height: 1.5em;
+  padding-right: 1vw;
+}
+.about-page-wrapper .about-page-content .about-text::-webkit-scrollbar {
+  width: 0.5vw;
+}
+.about-page-wrapper .about-page-content .about-text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px hsl(190deg, 7%, 84%);
+  border-radius: 10px;
+}
+.about-page-wrapper .about-page-content .about-text::-webkit-scrollbar-thumb {
+  background: hsl(190deg, 7%, 84%);
+  border-radius: 10px;
+}
+.about-page-wrapper .about-page-content .about-text::-webkit-scrollbar-thumb:hover {
+  background: hsl(26deg, 66%, 41%);
+  border-radius: 10px;
+}
+.about-page-wrapper .about-page-content .about-text h1 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.about-page-wrapper .about-page-content .about-text h2 {
+  margin-top: 1em;
+}
+.about-page-wrapper .about-page-content .about-text h2 a {
+  font-weight: bold;
   transition: color 500ms;
 }
-.landing-page-wrapper .landing-page-content .main-nav .nav-item:hover {
+.about-page-wrapper .about-page-content .about-text h2 a:hover {
   color: hsl(26deg, 66%, 41%);
 }
-.landing-page-wrapper .next-page {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 7vh;
-  color: hsl(190deg, 7%, 84%);
-  font-size: 5vh;
-  text-align: center;
-  transition: color 500ms, background-color 500ms;
+.about-page-wrapper .about-page-content .about-text p {
+  text-align: justify;
+  margin-bottom: 1em;
+  width: auto;
 }
-.landing-page-wrapper .next-page i {
-  position: absolute;
-  bottom: 1vh;
+.about-page-wrapper .about-page-content .about-text img {
+  width: 35%;
+  margin-bottom: 1em;
 }
-.landing-page-wrapper .next-page:hover {
-  color: hsl(26deg, 66%, 41%);
-  background-color: rgba(211, 216, 217, 0.1);
+.about-page-wrapper .about-page-content .about-text img.float-left {
+  float: left;
+  margin-right: 2em;
+}
+.about-page-wrapper .about-page-content .about-text img.float-right {
+  float: right;
+  margin-left: 2em;
 }
 
-.about-page-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: hsl(231deg, 18%, 14%);
-}
-.about-page-wrapper img.background-image {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom center;
-     object-position: bottom center;
-  width: 100%;
-  height: 100%;
-  filter: brightness(50%);
-}
-.about-page-wrapper .about-page-content .main-nav {
-  z-index: 10;
-  position: absolute;
-  right: 5vw;
-  top: 15vh;
-}
-.about-page-wrapper .about-page-content .main-nav .nav-item {
-  display: block;
-  position: relative;
-  color: hsl(190deg, 7%, 84%);
-  font-family: Sorts Mill Goudy;
-  font-size: 4vh;
-  padding: 0.25em 0;
-  transition: color 500ms;
-}
-.about-page-wrapper .about-page-content .main-nav .nav-item:hover {
-  color: hsl(26deg, 66%, 41%);
-}
-.about-page-wrapper .about-page-content .main-nav .active-nav-item {
-  color: hsl(26deg, 66%, 41%);
-  cursor: default;
-}
-.about-page-wrapper .next-page {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-.about-page-wrapper .previous-page {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.about-page-wrapper .next-page, .about-page-wrapper .previous-page {
-  z-index: 10;
-  width: 100%;
-  height: 7vh;
-  color: hsl(190deg, 7%, 84%);
-  font-size: 5vh;
-  text-align: center;
-  transition: color 500ms, background-color 500ms;
-}
-.about-page-wrapper .next-page i, .about-page-wrapper .previous-page i {
-  position: absolute;
-  bottom: 1vh;
-}
-.about-page-wrapper .next-page:hover, .about-page-wrapper .previous-page:hover {
-  color: hsl(26deg, 66%, 41%);
-  background-color: rgba(211, 216, 217, 0.1);
-}
-
-.portfolio-page-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: hsl(231deg, 18%, 14%);
-}
-.portfolio-page-wrapper img.background-image {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom center;
-     object-position: bottom center;
-  width: 100%;
-  height: 100%;
-  filter: brightness(50%);
-}
-.portfolio-page-wrapper .portfolio-page-content .main-nav {
-  z-index: 10;
-  position: absolute;
-  right: 5vw;
-  top: 15vh;
-}
-.portfolio-page-wrapper .portfolio-page-content .main-nav .nav-item {
-  display: block;
-  position: relative;
-  color: hsl(190deg, 7%, 84%);
-  font-family: Sorts Mill Goudy;
-  font-size: 4vh;
-  padding: 0.25em 0;
-  transition: color 500ms;
-}
-.portfolio-page-wrapper .portfolio-page-content .main-nav .nav-item:hover {
-  color: hsl(26deg, 66%, 41%);
-}
-.portfolio-page-wrapper .portfolio-page-content .main-nav .active-nav-item {
-  color: hsl(26deg, 66%, 41%);
-  cursor: default;
-}
-.portfolio-page-wrapper .next-page {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-.portfolio-page-wrapper .previous-page {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.portfolio-page-wrapper .next-page, .portfolio-page-wrapper .previous-page {
-  z-index: 10;
-  width: 100%;
-  height: 7vh;
-  color: hsl(190deg, 7%, 84%);
-  font-size: 5vh;
-  text-align: center;
-  transition: color 500ms, background-color 500ms;
-}
-.portfolio-page-wrapper .next-page i, .portfolio-page-wrapper .previous-page i {
-  position: absolute;
-  bottom: 1vh;
-}
-.portfolio-page-wrapper .next-page:hover, .portfolio-page-wrapper .previous-page:hover {
-  color: hsl(26deg, 66%, 41%);
-  background-color: rgba(211, 216, 217, 0.1);
-}
-
-.contact-page-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: hsl(231deg, 18%, 14%);
-}
-.contact-page-wrapper img.background-image {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom center;
-     object-position: bottom center;
-  width: 100%;
-  height: 100%;
-  filter: brightness(50%);
-}
-.contact-page-wrapper .contact-page-content .main-nav {
-  z-index: 10;
-  position: absolute;
-  right: 5vw;
-  top: 15vh;
-}
-.contact-page-wrapper .contact-page-content .main-nav .nav-item {
-  display: block;
-  position: relative;
-  color: hsl(190deg, 7%, 84%);
-  font-family: Sorts Mill Goudy;
-  font-size: 4vh;
-  padding: 0.25em 0;
-  transition: color 500ms;
-}
-.contact-page-wrapper .contact-page-content .main-nav .nav-item:hover {
-  color: hsl(26deg, 66%, 41%);
-}
-.contact-page-wrapper .contact-page-content .main-nav .active-nav-item {
-  color: hsl(26deg, 66%, 41%);
-  cursor: default;
-}
-.contact-page-wrapper .next-page {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-.contact-page-wrapper .previous-page {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.contact-page-wrapper .next-page, .contact-page-wrapper .previous-page {
-  z-index: 10;
-  width: 100%;
-  height: 7vh;
-  color: hsl(190deg, 7%, 84%);
-  font-size: 5vh;
-  text-align: center;
-  transition: color 500ms, background-color 500ms;
-}
-.contact-page-wrapper .next-page i, .contact-page-wrapper .previous-page i {
-  position: absolute;
-  bottom: 1vh;
-}
-.contact-page-wrapper .next-page:hover, .contact-page-wrapper .previous-page:hover {
-  color: hsl(26deg, 66%, 41%);
-  background-color: rgba(211, 216, 217, 0.1);
-}
 .contact-page-wrapper .page-footer {
   position: absolute;
   bottom: 0px;
@@ -361,8 +234,12 @@ table {
   src: url(../fonts/Sorts_Mill_Goudy_Regular.woff) format("woff");
   font-style: normal;
 }
+body {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow: hidden;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
