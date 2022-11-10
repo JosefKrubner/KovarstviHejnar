@@ -32,30 +32,20 @@
     font-style: normal;
 }
 
-body {
-    overflow: hidden;
-}
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 16px;
 
-    // font-family: $font-plain;
-
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
-    // -ms-overflow-style: none;  /* IE and Edge */
-    // scrollbar-width: none;  /* Firefox */
-    
-    // border: 1px solid black;	
-    // cursor: url('../img/cursor_hammer_light.png'), auto;
+    font-family: $font-plain;
 }
 
-// a {
-//     cursor: url('../img/cursor_hammer.png'), pointer;
-// }
+a {
+    transition: color 500ms;
+    &:hover {
+        color: $secondary-color;
+    }
+}
 
 
 

@@ -79,15 +79,19 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
+  width: 80%;
+}
+.page-wrapper .next-page i {
+  left: 12.5%;
 }
 .page-wrapper .previous-page {
   position: absolute;
   top: 0px;
   left: 0px;
+  width: 100%;
 }
 .page-wrapper .next-page, .page-wrapper .previous-page {
   z-index: 10;
-  width: 100%;
   height: 7vh;
   color: hsl(190deg, 7%, 84%);
   font-size: 5vh;
@@ -95,12 +99,31 @@ body {
   transition: color 500ms, background-color 500ms;
 }
 .page-wrapper .next-page i, .page-wrapper .previous-page i {
-  position: absolute;
-  bottom: 1vh;
+  padding: 1vh;
+  position: relative;
 }
 .page-wrapper .next-page:hover, .page-wrapper .previous-page:hover {
   color: hsl(26deg, 66%, 41%);
   background-color: rgba(211, 216, 217, 0.1);
+}
+.page-wrapper .socials {
+  position: absolute;
+  right: 5vw;
+  bottom: 1vh;
+  color: hsl(190deg, 7%, 84%);
+  display: inline-block;
+  height: 7vh;
+  width: 20%;
+  text-align: right;
+  font-size: 5vh;
+  padding: 1.5vh 0;
+}
+.page-wrapper .socials a {
+  transition: color 500ms;
+  margin-left: 0.5vw;
+}
+.page-wrapper .socials a:hover {
+  color: hsl(26deg, 66%, 41%);
 }
 
 .landing-page-wrapper .landing-page-content .title {
@@ -130,6 +153,7 @@ body {
   width: 75vw;
   height: 80vh;
   color: hsl(190deg, 7%, 84%);
+  font-family: Sorts Mill Goudy;
   font-size: 1.5vw;
   line-height: 1.5em;
   padding-right: 1vw;
@@ -181,39 +205,143 @@ body {
   margin-left: 2em;
 }
 
+.contact-page-wrapper .contact-page-content .contact-info {
+  z-index: 10;
+  position: absolute;
+  left: 5%;
+  top: 15vh;
+  width: 40%;
+  height: 70%;
+  padding-right: 2.5%;
+  border-right: 0.1vw solid hsl(190deg, 7%, 84%);
+  color: hsl(190deg, 7%, 84%);
+  font-family: Sorts Mill Goudy;
+}
+.contact-page-wrapper .contact-page-content .contact-info .logo {
+  width: 100%;
+}
+.contact-page-wrapper .contact-page-content .contact-info .text h1 {
+  font-size: 5vh;
+  margin-top: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+.contact-page-wrapper .contact-page-content .contact-info .text p {
+  font-size: 3vh;
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+.contact-page-wrapper .contact-page-content .contact-info .text p .title {
+  display: inline-block;
+  font-weight: bold;
+  width: 17.5%;
+  text-align: center;
+}
+.contact-page-wrapper .contact-page-content .contact-info .text p .title.address {
+  position: relative;
+  top: 0.75em;
+}
+.contact-page-wrapper .contact-page-content .contact-form {
+  z-index: 10;
+  position: absolute;
+  left: 47.5%;
+  bottom: 15vh;
+  width: 30%;
+  height: 70%;
+  color: hsl(190deg, 7%, 84%);
+  font-size: 3.5vh;
+  font-family: Sorts Mill Goudy;
+}
+.contact-page-wrapper .contact-page-content .contact-form label {
+  position: relative;
+  bottom: -0.4em;
+  display: block;
+  width: 100%;
+}
+.contact-page-wrapper .contact-page-content .contact-form label:first-child {
+  margin-top: 0px;
+}
+.contact-page-wrapper .contact-page-content .contact-form input, .contact-page-wrapper .contact-page-content .contact-form textarea {
+  width: 100%;
+  height: 1.8em;
+  padding-left: 0.5em;
+  font-size: 0.7em;
+  color: hsl(190deg, 7%, 84%);
+  border: none;
+  outline: none;
+  background-color: rgba(29, 31, 42, 0.9);
+  transition: border-bottom 500ms;
+}
+.contact-page-wrapper .contact-page-content .contact-form input::-moz-placeholder, .contact-page-wrapper .contact-page-content .contact-form textarea::-moz-placeholder {
+  color: hsl(190deg, 7%, 84%);
+  opacity: 0.8;
+}
+.contact-page-wrapper .contact-page-content .contact-form input:-ms-input-placeholder, .contact-page-wrapper .contact-page-content .contact-form textarea:-ms-input-placeholder {
+  color: hsl(190deg, 7%, 84%);
+  opacity: 0.8;
+}
+.contact-page-wrapper .contact-page-content .contact-form input::placeholder, .contact-page-wrapper .contact-page-content .contact-form textarea::placeholder {
+  color: hsl(190deg, 7%, 84%);
+  opacity: 0.8;
+}
+.contact-page-wrapper .contact-page-content .contact-form input:focus, .contact-page-wrapper .contact-page-content .contact-form textarea:focus {
+  outline: none;
+  border-bottom: 0.1em solid hsl(26deg, 66%, 41%);
+}
+.contact-page-wrapper .contact-page-content .contact-form textarea {
+  margin-top: 0.25em;
+  height: 34%;
+  resize: none;
+  padding: 0.5em;
+  overflow-y: scroll;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover*/
+}
+.contact-page-wrapper .contact-page-content .contact-form textarea::-webkit-scrollbar {
+  width: 0.5vw;
+}
+.contact-page-wrapper .contact-page-content .contact-form textarea::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px hsl(190deg, 7%, 84%);
+  border-radius: 10px;
+}
+.contact-page-wrapper .contact-page-content .contact-form textarea::-webkit-scrollbar-thumb {
+  background: hsl(190deg, 7%, 84%);
+  border-radius: 10px;
+}
+.contact-page-wrapper .contact-page-content .contact-form textarea::-webkit-scrollbar-thumb:hover {
+  background: hsl(26deg, 66%, 41%);
+  border-radius: 10px;
+}
+.contact-page-wrapper .contact-page-content .contact-form input[type=submit] {
+  font-size: 1em;
+  margin-top: 0.5em;
+  border: none;
+}
+.contact-page-wrapper .contact-page-content .contact-form input[type=submit]:hover {
+  background-color: rgba(174, 95, 36, 0.5);
+}
 .contact-page-wrapper .page-footer {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 100%;
+  width: 80%;
   height: 7vh;
   color: hsl(190deg, 7%, 84%);
 }
 .contact-page-wrapper .page-footer .copyright {
+  z-index: 10;
   position: absolute;
   left: 5vw;
+  bottom: 0px;
   display: inline-block;
   height: 100%;
-  font-size: 3vh;
+  font-size: 2vh;
   padding: 2vh 0;
   transition: color 500ms;
 }
 .contact-page-wrapper .page-footer .copyright:hover {
-  color: hsl(26deg, 66%, 41%);
-}
-.contact-page-wrapper .page-footer .socials {
-  position: absolute;
-  right: 5vw;
-  display: inline-block;
-  height: 100%;
-  font-size: 4vh;
-  padding: 1.5vh 0;
-}
-.contact-page-wrapper .page-footer .socials a {
-  transition: color 500ms;
-  margin-left: 0.5vw;
-}
-.contact-page-wrapper .page-footer .socials a:hover {
   color: hsl(26deg, 66%, 41%);
 }
 
@@ -234,12 +362,16 @@ body {
   src: url(../fonts/Sorts_Mill_Goudy_Regular.woff) format("woff");
   font-style: normal;
 }
-body {
-  overflow: hidden;
-}
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
+  font-family: Sorts Mill Goudy;
+}
+
+a {
+  transition: color 500ms;
+}
+a:hover {
+  color: hsl(26deg, 66%, 41%);
 }/*# sourceMappingURL=main.css.map */
