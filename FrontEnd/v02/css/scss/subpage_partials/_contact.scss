@@ -151,6 +151,8 @@
 
                 border: none;
 
+                transition: background-color 500ms;
+
                 &:hover {
                     background-color: transparentize($secondary-color, .5);
                 }
