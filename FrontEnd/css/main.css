@@ -261,7 +261,7 @@ body {
   right: 2%;
   width: 26%;
   height: 96%;
-  padding-top: 15%;
+  padding-top: 20%;
   font-family: Sorts Mill Goudy;
   font-size: 1.75vw;
   color: hsl(190deg, 7%, 84%);
@@ -311,21 +311,13 @@ body {
   z-index: 10;
   position: absolute;
   left: 5%;
-  top: 15vh;
-  width: 40%;
+  top: 20%;
+  width: 30%;
   height: 70%;
-  padding-right: 2.5%;
-  border-right: 0.1vw solid hsl(190deg, 7%, 84%);
   color: hsl(190deg, 7%, 84%);
   font-family: Sorts Mill Goudy;
 }
 .contact-page-wrapper .contact-page-content .contact-info .logo {
-  width: 100%;
-}
-.contact-page-wrapper .contact-page-content .contact-info .text h1 {
-  font-size: 5vh;
-  margin-top: 0.5em;
-  text-align: center;
   width: 100%;
 }
 .contact-page-wrapper .contact-page-content .contact-info .text p {
@@ -343,12 +335,17 @@ body {
   position: relative;
   top: 0.75em;
 }
+.contact-page-wrapper .contact-page-content .contact-info .to-contact-form {
+  display: none;
+}
 .contact-page-wrapper .contact-page-content .contact-form {
   z-index: 10;
   position: absolute;
-  left: 47.5%;
+  left: 40%;
   bottom: 15vh;
-  width: 30%;
+  border-left: 0.1vw solid hsl(190deg, 7%, 84%);
+  padding-left: 5%;
+  width: 35%;
   height: 70%;
   color: hsl(190deg, 7%, 84%);
   font-size: 3.5vh;
@@ -356,12 +353,12 @@ body {
 }
 .contact-page-wrapper .contact-page-content .contact-form label {
   position: relative;
-  bottom: -0.4em;
+  top: 0.4em;
   display: block;
   width: 100%;
 }
 .contact-page-wrapper .contact-page-content .contact-form label:first-child {
-  margin-top: 0px;
+  margin-top: -0.5em;
 }
 .contact-page-wrapper .contact-page-content .contact-form input, .contact-page-wrapper .contact-page-content .contact-form textarea {
   width: 100%;
@@ -386,9 +383,23 @@ body {
   color: hsl(190deg, 7%, 84%);
   opacity: 0.8;
 }
-.contact-page-wrapper .contact-page-content .contact-form input:focus, .contact-page-wrapper .contact-page-content .contact-form textarea:focus {
+.contact-page-wrapper .contact-page-content .contact-form input:focus, .contact-page-wrapper .contact-page-content .contact-form input:hover, .contact-page-wrapper .contact-page-content .contact-form textarea:focus, .contact-page-wrapper .contact-page-content .contact-form textarea:hover {
   outline: none;
   border-bottom: 0.1em solid hsl(26deg, 66%, 41%);
+}
+.contact-page-wrapper .contact-page-content .contact-form input[type=file], .contact-page-wrapper .contact-page-content .contact-form textarea[type=file] {
+  opacity: 0.8;
+  cursor: pointer;
+  padding-top: 0.25em;
+}
+.contact-page-wrapper .contact-page-content .contact-form input[type=file]:focus, .contact-page-wrapper .contact-page-content .contact-form textarea[type=file]:focus {
+  border-bottom: none;
+}
+.contact-page-wrapper .contact-page-content .contact-form input[type=file]::-webkit-file-upload-button, .contact-page-wrapper .contact-page-content .contact-form textarea[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+.contact-page-wrapper .contact-page-content .contact-form input[type=file]::file-selector-button, .contact-page-wrapper .contact-page-content .contact-form textarea[type=file]::file-selector-button {
+  display: none;
 }
 .contact-page-wrapper .contact-page-content .contact-form textarea {
   margin-top: 0.25em;
@@ -420,10 +431,17 @@ body {
   font-size: 1em;
   margin-top: 0.5em;
   border: none;
+  cursor: pointer;
   transition: background-color 500ms;
 }
 .contact-page-wrapper .contact-page-content .contact-form input[type=submit]:hover {
   background-color: rgba(174, 95, 36, 0.5);
+}
+.contact-page-wrapper .contact-page-content .contact-form .back-to-contact {
+  display: none;
+}
+.contact-page-wrapper .contact-page-content .main-nav-second {
+  display: none;
 }
 .contact-page-wrapper .page-footer {
   position: absolute;
@@ -477,4 +495,127 @@ a {
 }
 a:hover {
   color: hsl(26deg, 66%, 41%);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .page-wrapper .page-content .main-nav {
+    top: 2vh;
+    right: 8vw;
+  }
+  .page-wrapper .page-content .main-nav .nav-item {
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+  .page-wrapper .next-page, .page-wrapper .previous-page {
+    display: none;
+  }
+  .landing-page-wrapper .landing-page-content .title {
+    left: 15vw;
+  }
+  .about-page-wrapper .about-page-content .about-text {
+    top: 12.5vh;
+    width: 90vw;
+    height: 77.5vh;
+    font-size: 1.4em;
+    padding-right: 1em;
+  }
+  .about-page-wrapper .about-page-content .about-text::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper {
+    top: 12.5vh;
+    width: 90vw;
+    height: 77.5vh;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 70%;
+    width: 100%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-description {
+    right: 2%;
+    width: 96%;
+    height: 26%;
+    padding-top: 5%;
+    font-size: 1.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item {
+    font-size: 4vh;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item i {
+    position: relative;
+    left: 0.1em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item i {
+    position: relative;
+    right: 0.1em;
+  }
+  .contact-page-wrapper {
+    height: 200vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info {
+    height: 38.75%;
+    top: 12.5vh;
+    left: 12.5%;
+    width: 75%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .text p {
+    font-size: 3.5vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .to-contact-form {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    color: hsl(190deg, 7%, 84%);
+    font-size: 3vh;
+    font-family: Sorts Mill Goudy;
+    padding: 1vh;
+    background-color: rgba(29, 31, 42, 0.8);
+    transition: background-color 500ms;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .to-contact-form:hover {
+    background-color: rgba(174, 95, 36, 0.5);
+  }
+  .contact-page-wrapper .contact-page-content .contact-form {
+    margin-top: -12.5vh;
+    height: 38.75%;
+    bottom: 10vh;
+    left: 5%;
+    padding-top: 10%;
+    width: 90%;
+    border: none;
+    font-size: 2.75vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form input[type=submit] {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 80%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form .back-to-contact {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    color: hsl(190deg, 7%, 84%);
+    font-size: 2.5vh;
+    font-family: Sorts Mill Goudy;
+    padding: 1vh;
+    background-color: rgba(29, 31, 42, 0.8);
+    transition: background-color 500ms;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form .back-to-contact:hover {
+    background-color: rgba(174, 95, 36, 0.5);
+  }
+  .contact-page-wrapper .contact-page-content .main-nav-second {
+    display: block;
+    top: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

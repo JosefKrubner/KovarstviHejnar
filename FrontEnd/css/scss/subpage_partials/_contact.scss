@@ -5,14 +5,10 @@
 
             position: absolute;
             left: 5%;
-            top: 15vh;
+            top: 20%;
 
-            width: 40%;
+            width: 30%;
             height: 70%;
-
-            padding-right: 2.5%;
-
-            border-right: .1vw solid $text-light-color;
 
             color: $text-light-color;
             font-family: $font-plain;
@@ -22,13 +18,6 @@
             }
 
             .text {
-                h1 {
-                    font-size: 5vh;
-                    margin-top: .5em;
-                    text-align: center;
-                    width: 100%;
-                }
-
                 p {
                     .title {
                         display: inline-block;
@@ -48,16 +37,23 @@
                     line-height: 1.5em;
                 }
             }
+
+            .to-contact-form {
+                display: none;
+            }
         }
 
         .contact-form {
             z-index: 10;
 
             position: absolute;
-            left: 47.5%;
+            left: 40%;
             bottom: 15vh;
 
-            width: 30%;
+            border-left: .1vw solid $text-light-color;
+            padding-left: 5%;
+
+            width: 35%;
             height: 70%;
 
             color: $text-light-color;
@@ -70,16 +66,14 @@
 
             label {
                 position: relative;
-                bottom: -.4em;
+                top: .4em;
                 
                 display: block;
                 width: 100%;
                 // border: 2px solid $text-light-color;
-                
-                
 
                 &:first-child {
-                    margin-top: 0px;
+                    margin-top: -.5em;
                 }
             }
 
@@ -104,10 +98,27 @@
                     opacity: .8;
                 }
 
-                &:focus {
+                &:focus, &:hover {
                     outline: none;
                     border-bottom: .1em solid $secondary-color;
-                } 
+                }
+
+                &[type=file] {
+
+                    opacity: .8;
+
+                    cursor: pointer;
+         
+                    padding-top: .25em;
+
+                    &:focus {
+                        border-bottom: none;
+                    }
+
+                    &::file-selector-button {
+                        display: none;
+                    }
+                }
             }
 
             textarea {
@@ -151,12 +162,22 @@
 
                 border: none;
 
+                cursor: pointer;
+
                 transition: background-color 500ms;
 
                 &:hover {
                     background-color: transparentize($secondary-color, .5);
                 }
             }
+
+            .back-to-contact {
+                display: none;
+            }
+        }
+        
+        .main-nav-second {
+            display: none;
         }
     }
 

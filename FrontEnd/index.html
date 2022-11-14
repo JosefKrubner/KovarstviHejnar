@@ -168,37 +168,80 @@
                         <i class="fa-solid fa-phone title"></i>+420 777 573 130
                         <br>
                         <i class="fa-solid fa-envelope title"></i>kontakt@kovarstvihejnar.cz
-                    </p>
-
-                    <p>
+                        <br>
                         <i class="fa-solid fa-location-dot title address"></i>U nádraží 306
                         <br>
                         <span class="title"></span>252 10 Mníšek pod Brdy
                     </p>
                 </div>
+
+                <a href="#contact-form" class="to-contact-form">Kontaktní formulář</a>
             </div>
 
-            <form action="" class="contact-form" autocomplete="false">
+            <form action="" id="contact-form" class="contact-form" autocomplete="false">
+                <a href="#contact" class="back-to-contact">Zpět na kontaktní údaje</a>
+
                 <label for="jmeno">Jméno a příjmení:</label>
-                <input type="search" id="jmeno" name="jmeno" autocomplete="off" required placeholder="Jan Novák">
+                <input 
+                    type="search" 
+                    id="jmeno" 
+                    name="jmeno" 
+                    autocomplete="off" 
+                    required 
+                    placeholder="Jan Novák"
+                >
                 <br>
                 <label for="email">Email:</label>
-                <input type="search" id="email" name="email" autocomplete="off" required placeholder="jan.novak@email.cz">
+                <input 
+                    type="search" 
+                    id="email" 
+                    name="email" 
+                    autocomplete="off" 
+                    required 
+                    placeholder="jan.novak@email.cz"
+                >
                 <br>
-                <!-- <label for="telefon">Telefon:</label>
-                <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="123456789"> 
-                <br> -->
                 <label for="predmet">Předmět zprávy:</label>
-                <input type="search" id="predmet" autocomplete="off" name="predmet" required placeholder="Předmět">
+                <input 
+                    type="search" 
+                    id="predmet" 
+                    autocomplete="off" 
+                    name="predmet" 
+                    required 
+                    placeholder="Předmět"
+                >
+                <br>
+                <label for="prilohy">Přiložit fotky (volitelné):</label>
+                <input 
+                    type="file" 
+                    name="prilohy" 
+                    id="prilohy" 
+                    accept="image/*"
+                    multiple
+                >
                 <br>
                 <label for="zprava">Váš vzkaz:</label>
-                <textarea name="zprava" id="zprava" cols="30" rows="10" required placeholder="Váš vzkaz..."></textarea>
+                <textarea 
+                    name="zprava" 
+                    id="zprava" 
+                    cols="30" 
+                    rows="10" 
+                    required 
+                    placeholder="Váš vzkaz..."
+                ></textarea>
                 <br>
                 <input type="submit" value="Odeslat">                
             </form>
 
 
             <nav class="main-nav">
+                <a href="#landing-page" class="nav-item">Domů</a>
+                <a href="#about" class="nav-item">O mně</a>
+                <a href="#portfolio" class="nav-item">Portfolio</a>
+                <a href="#contact" class="nav-item active-nav-item">Kontakt</a>
+            </nav>
+
+            <nav class="main-nav main-nav-second">
                 <a href="#landing-page" class="nav-item">Domů</a>
                 <a href="#about" class="nav-item">O mně</a>
                 <a href="#portfolio" class="nav-item">Portfolio</a>

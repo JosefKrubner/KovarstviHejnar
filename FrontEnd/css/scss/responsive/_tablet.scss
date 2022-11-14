@@ -1,0 +1,201 @@
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    
+    // Layout
+    .page-wrapper {
+        .page-content {
+            .main-nav {
+                top: 2vh;
+                right: 8vw;
+    
+                .nav-item {
+                    display: inline-block;
+                    margin-left: .5em;
+                    // text-decoration: underline;
+                    // text-decoration-style: solid;
+                    // text-decoration-thickness: .05em;
+                    // text-underline-offset: .25em;
+                }
+            }
+        }
+    
+        .next-page, .previous-page {
+            display: none;
+        }
+    }
+
+    // Landing page
+    .landing-page-wrapper {
+        .landing-page-content {
+            .title {
+                left: 15vw;
+            }
+        }
+    }
+
+    // About
+    .about-page-wrapper {
+        .about-page-content {
+            .about-text {
+                top: 12.5vh;
+
+                width: 90vw;
+                height: 77.5vh;
+                font-size: 1.4em;
+                padding-right: 1em;
+
+                &::-webkit-scrollbar {
+                    width: .5em;
+                }
+            }
+        }
+    }
+
+    // Portfolio
+    .portfolio-page-wrapper {
+        .portfolio-page-content {
+            .carousel-wrapper {
+                top: 12.5vh;
+
+                width: 90vw;
+                height: 77.5vh;
+
+                .carousel-item {
+                    .carousel-item-images {
+
+                        position: absolute;
+                        
+                        bottom: 0;
+                        left: 0%;
+
+                        height: 70%;
+                        width: 100%;                        
+                    }
+
+                    .carousel-item-description {
+                        right: 2%;
+                    
+                        width: 96%;
+                        height: 26%;
+
+                        padding-top: 5%;
+
+                        font-size: 1.5em;
+                        
+                    }
+                }
+
+                .previous-item, .next-item {
+                    font-size: 4vh;
+                }
+
+                .previous-item {
+                    i {
+                        position: relative;
+                        left: .1em;
+                    }
+                }
+
+                .next-item {
+                    i {
+                        position: relative;
+                        right: .1em;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contact
+    .contact-page-wrapper {
+        height: 200vh;
+
+        .contact-page-content {
+            .contact-info {
+                height: 38.75%;
+                top: 12.5vh;
+                left: 12.5%;
+                width: 75%;
+
+                .text {
+                    p {
+                        font-size: 3.5vh;
+                    }
+                }
+
+                .to-contact-form {
+                    display: block;
+                    
+                    position: absolute;
+                    bottom: 0px;
+                    left: 20%;
+
+                    width: 60%;
+                    
+                    text-align: center;
+                    color: $text-light-color;
+                    font-size: 3vh;
+                    font-family: $font-plain;
+                    padding: 1vh;
+
+                    background-color: transparentize($primary-color, .2);
+                    
+                    transition: background-color 500ms;                    
+                    &:hover {
+                        background-color: transparentize($secondary-color, .5);
+                    }
+                }
+            }
+
+            .contact-form {
+                margin-top: -12.5vh;
+                height: 38.75%;
+                bottom: 10vh;
+                left: 5%;
+
+                padding-top: 10%;
+
+                input[type=submit] {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 10%;
+
+                    width: 80%;
+                }
+
+                width: 90%;
+
+                border: none;
+
+                font-size: 2.75vh;
+
+                .back-to-contact {
+                    display: block;
+                    
+                    position: absolute;
+                    top: 0px;
+                    left: 20%;
+
+                    width: 60%;
+                    
+                    text-align: center;
+                    color: $text-light-color;
+                    font-size: 2.5vh;
+                    font-family: $font-plain;
+                    padding: 1vh;
+
+                    background-color: transparentize($primary-color, .2);
+                    
+                    transition: background-color 500ms;                    
+                    &:hover {
+                        background-color: transparentize($secondary-color, .5);
+                    }
+                }
+            }
+
+            .main-nav-second {
+                display: block;
+                top: 50%;
+            }
+        }
+    }
+}
