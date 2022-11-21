@@ -131,7 +131,7 @@
 
                 transition: color 500ms, background-color 500ms;
 
-                &:hover {
+                &:hover, &:focus {
                     color: $secondary-color;
                     background-color: transparentize($tertiary-color, .9);
                 }

@@ -296,7 +296,7 @@ body {
   padding-top: 37.5vh;
   transition: color 500ms, background-color 500ms;
 }
-.portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item:hover, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item:hover {
+.portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item:hover, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item:focus, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item:hover, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item:focus {
   color: hsl(26deg, 66%, 41%);
   background-color: rgba(211, 216, 217, 0.1);
 }
@@ -403,7 +403,7 @@ body {
 }
 .contact-page-wrapper .contact-page-content .contact-form textarea {
   margin-top: 0.25em;
-  height: 34%;
+  height: 25%;
   resize: none;
   padding: 0.5em;
   overflow-y: scroll;
@@ -464,6 +464,9 @@ body {
 }
 .contact-page-wrapper .page-footer .copyright:hover {
   color: hsl(26deg, 66%, 41%);
+}
+.contact-page-wrapper .second-socials {
+  display: none;
 }
 
 @font-face {
@@ -617,5 +620,416 @@ a:hover {
   .contact-page-wrapper .contact-page-content .main-nav-second {
     display: block;
     top: 50%;
+  }
+  .contact-page-wrapper .second-socials {
+    display: block;
+    bottom: 50.5%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .page-wrapper {
+    overflow: hidden;
+  }
+  .page-wrapper .page-content .main-nav {
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 15vh;
+  }
+  .page-wrapper .page-content .main-nav .nav-item {
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 1vh;
+    width: 44%;
+    height: 6vh;
+    font-size: 4vh;
+    text-align: center;
+  }
+  .page-wrapper .next-page, .page-wrapper .previous-page {
+    display: none;
+  }
+  .page-wrapper .socials {
+    width: 100%;
+  }
+  .landing-page-wrapper .landing-page-content .title {
+    left: 15vw;
+  }
+  .about-page-wrapper .about-page-content .about-text {
+    top: 17.5vh;
+    width: 90vw;
+    height: 70vh;
+    font-size: 1.4em;
+    padding-right: 1em;
+  }
+  .about-page-wrapper .about-page-content .about-text img {
+    width: 45%;
+    margin-bottom: 0px;
+  }
+  .about-page-wrapper .about-page-content .about-text img.float-left {
+    float: left;
+    margin-right: 0.5em;
+  }
+  .about-page-wrapper .about-page-content .about-text img.float-right {
+    float: right;
+    margin-left: 0.5em;
+  }
+  .about-page-wrapper .about-page-content .about-text::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper {
+    top: 17.5vh;
+    width: 90vw;
+    height: 70vh;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item {
+    top: 10%;
+    height: 90%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images {
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    height: 60%;
+    width: 100%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.top.left {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.top.left:hover {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.right, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.bottom {
+    display: none;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-description {
+    right: 2%;
+    top: 0%;
+    width: 96%;
+    height: 35%;
+    padding-top: 0%;
+    font-size: 1.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-description .detail {
+    position: relative;
+    bottom: 0.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item {
+    height: 10%;
+    width: 50%;
+    font-size: 4vh;
+    color: rgba(211, 216, 217, 0.5);
+    padding: 0;
+    padding-top: 0.3em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item {
+    text-align: left;
+    padding-left: 0.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item {
+    text-align: right;
+    padding-right: 0.5em;
+  }
+  .contact-page-wrapper {
+    height: 200vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info {
+    top: 17.5vh;
+    top: 17.5vh;
+    left: 5%;
+    height: 35%;
+    width: 90%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .text p {
+    font-size: 2.75vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .to-contact-form {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    color: hsl(190deg, 7%, 84%);
+    font-size: 3vh;
+    font-family: Sorts Mill Goudy;
+    padding: 1vh;
+    background-color: rgba(29, 31, 42, 0.8);
+    transition: background-color 500ms;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .to-contact-form:hover {
+    background-color: rgba(174, 95, 36, 0.5);
+  }
+  .contact-page-wrapper .contact-page-content .contact-form {
+    margin-top: -17.5vh;
+    bottom: 10vh;
+    left: 5%;
+    width: 90%;
+    height: 35%;
+    padding-top: 15%;
+    font-size: 2.5vh;
+    border: none;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form .back-to-contact {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    color: hsl(190deg, 7%, 84%);
+    font-size: 2vh;
+    font-family: Sorts Mill Goudy;
+    padding: 1vh;
+    background-color: rgba(29, 31, 42, 0.8);
+    transition: background-color 500ms;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form .back-to-contact:hover {
+    background-color: rgba(174, 95, 36, 0.5);
+  }
+  .contact-page-wrapper .contact-page-content .contact-form input[type=submit] {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 80%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form textarea {
+    height: 30%;
+  }
+  .contact-page-wrapper .contact-page-content .main-nav-second {
+    display: block;
+    top: 50%;
+  }
+  .contact-page-wrapper .second-socials {
+    display: block;
+    bottom: 50.5%;
+  }
+}
+@media screen and (max-height: 766px) and (orientation: landscape) {
+  .page-wrapper {
+    overflow: hidden;
+  }
+  .page-wrapper .page-content .main-nav {
+    top: 2vh;
+    right: 0px;
+    width: 15vw;
+    height: 85vh;
+  }
+  .page-wrapper .page-content .main-nav .nav-item {
+    display: block;
+    width: 100%;
+    height: 6vh;
+    font-size: 6vh;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  .page-wrapper .next-page, .page-wrapper .previous-page {
+    display: none;
+  }
+  .page-wrapper .socials {
+    width: 100%;
+    height: 10vh;
+    font-size: 8vh;
+    bottom: 2vh;
+  }
+  .landing-page-wrapper .landing-page-content .title {
+    left: 15vw;
+  }
+  .landing-page-wrapper .landing-page-content .title .title-header {
+    font-size: 14vh;
+  }
+  .landing-page-wrapper .landing-page-content .title .title-subheader {
+    font-size: 7vh;
+  }
+  .about-page-wrapper .about-page-content .about-text {
+    top: 2vh;
+    left: 2vh;
+    width: 80vw;
+    height: 96vh;
+    font-size: 1.4em;
+    padding-right: 1em;
+  }
+  .about-page-wrapper .about-page-content .about-text img {
+    width: 45%;
+    margin-bottom: 0px;
+  }
+  .about-page-wrapper .about-page-content .about-text img.float-left {
+    float: left;
+    margin-right: 0.5em;
+  }
+  .about-page-wrapper .about-page-content .about-text img.float-right {
+    float: right;
+    margin-left: 0.5em;
+  }
+  .about-page-wrapper .about-page-content .about-text::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper {
+    top: 2vh;
+    left: 2vh;
+    width: 80vw;
+    height: 96vh;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item {
+    top: 0px;
+    left: 7.5%;
+    height: 100%;
+    width: 85%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    height: 90%;
+    width: 60%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.top.left {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.top.left:hover {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.right, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-images img.bottom {
+    display: none;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-description {
+    right: 5%;
+    top: 5%;
+    max-width: 25%;
+    height: 90%;
+    padding: 0px;
+    padding-top: 15%;
+    text-align: center;
+    font-size: 1em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-description .detail {
+    position: relative;
+    font-size: 1.7em;
+    bottom: 0.5em;
+  }
+  .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .previous-item, .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .next-item {
+    height: 100%;
+    width: 7.5%;
+    font-size: 8vh;
+    color: rgba(211, 216, 217, 0.5);
+    padding: 0;
+    padding-top: 25%;
+  }
+  .contact-page-wrapper {
+    height: 200vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info {
+    top: 2vh;
+    left: 2vh;
+    width: 80vw;
+    height: 96vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .logo {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 40%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .text {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 45%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .text p {
+    font-size: 5vh;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .to-contact-form {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    color: hsl(190deg, 7%, 84%);
+    font-size: 5vh;
+    font-family: Sorts Mill Goudy;
+    padding: 1vh;
+    background-color: rgba(29, 31, 42, 0.8);
+    transition: background-color 500ms;
+  }
+  .contact-page-wrapper .contact-page-content .contact-info .to-contact-form:hover {
+    background-color: rgba(174, 95, 36, 0.5);
+  }
+  .contact-page-wrapper .contact-page-content .contact-form {
+    margin-top: -17.5vh;
+    bottom: 10vh;
+    left: 2vh;
+    width: 80vw;
+    height: 88vh;
+    padding-top: 5%;
+    font-size: 4vh;
+    border: none;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form .back-to-contact {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    color: hsl(190deg, 7%, 84%);
+    font-size: 3.5vh;
+    font-family: Sorts Mill Goudy;
+    padding: 1vh;
+    background-color: rgba(29, 31, 42, 0.8);
+    transition: background-color 500ms;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form .back-to-contact:hover {
+    background-color: rgba(174, 95, 36, 0.5);
+  }
+  .contact-page-wrapper .contact-page-content .contact-form label {
+    width: 35%;
+    margin-bottom: 0.5em;
+    margin-top: 0px;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form label.vzkaz {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form input {
+    width: 35%;
+    margin-bottom: 0.5em;
+    line-height: 2em;
+    font-size: 3.5vh;
+    height: auto;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form input[type=submit] {
+    position: absolute;
+    bottom: 0px;
+    right: 7.5%;
+    left: auto;
+    width: 45%;
+  }
+  .contact-page-wrapper .contact-page-content .contact-form textarea {
+    position: absolute;
+    top: calc(15% + 1.7em);
+    right: 5%;
+    width: 50%;
+    height: 60%;
+  }
+  .contact-page-wrapper .contact-page-content .main-nav-second {
+    display: block;
+    top: 50%;
+  }
+  .contact-page-wrapper .second-socials {
+    display: block;
+    bottom: 50.5%;
+  }
+  .contact-page-wrapper .page-footer .copyright {
+    font-size: 3vh;
   }
 }/*# sourceMappingURL=main.css.map */

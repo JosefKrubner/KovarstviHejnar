@@ -123,7 +123,7 @@
 
             textarea {
                 margin-top: .25em;
-                height: 34%;
+                height: 25%;
 
                 resize: none;
 
@@ -211,5 +211,9 @@
                 color: $secondary-color;
             }
         }
+    }
+
+    .second-socials {
+        display: none;
     }
 }

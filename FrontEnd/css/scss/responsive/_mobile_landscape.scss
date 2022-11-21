@@ -1,26 +1,25 @@
-@media screen and (max-width: 766px) {
+@media screen and (max-height: 766px) and (orientation: landscape){
     
     // Layout
     .page-wrapper {
         overflow: hidden;
         .page-content {
             .main-nav {
-                top: 0px;
+                top: 2vh;
                 right: 0px;
-                width: 100%;
-                height: 15vh;
+                width: 15vw;
+                height: 85vh;
 
                 // border: 1px solid $text-light-color;
     
                 .nav-item {
-                    display: inline-block;
-                    margin-left: 4%;
-                    margin-top: 1vh;
-                    width: 44%;
+                    display: block;
+                    width: 100%;
                     height: 6vh;
-                    font-size: 4vh;
+                    font-size: 6vh;
                     // border: 1px solid $text-light-color;
-                    text-align: center;
+                    text-align: left;
+                    margin-bottom: 1em;
                     // text-decoration: underline;
                     // text-decoration-style: solid;
                     // text-decoration-thickness: .05em;
@@ -35,6 +34,10 @@
 
         .socials {
             width: 100%;
+            height: 10vh;
+            font-size: 8vh;
+            bottom: 2vh;
+
         }
     }
 
@@ -43,6 +46,13 @@
         .landing-page-content {
             .title {
                 left: 15vw;
+                .title-header {
+                    font-size: 14vh;
+                }
+        
+                .title-subheader {
+                    font-size: 7vh;
+                }
             }
         }
     }
@@ -51,10 +61,11 @@
     .about-page-wrapper {
         .about-page-content {
             .about-text {
-                top: 17.5vh;
+                top: 2vh;
+                left: 2vh;
 
-                width: 90vw;
-                height: 70vh;
+                width: 80vw;
+                height: 96vh;
                 font-size: 1.4em;
 
                 img {
@@ -86,25 +97,28 @@
     .portfolio-page-wrapper {
         .portfolio-page-content {
             .carousel-wrapper {
-                top: 17.5vh;
+                top: 2vh;
+                left: 2vh;
 
-                width: 90vw;
-                height: 70vh;
+                width: 80vw;
+                height: 96vh;
 
                 .carousel-item {
-                    top: 10%;
+                    top: 0px;
+                    left: 7.5%;
                     
-                    height: 90%;
+                    height: 100%;
+                    width: 85%;
 
                     .carousel-item-images {
 
                         position: absolute;
                         
                         bottom: 5%;
-                        left: 0%;
+                        left: 5%;
 
-                        height: 60%;
-                        width: 100%;
+                        height: 90%;
+                        width: 60%;
                         
                         img.top.left {
                             width: 100%;
@@ -124,18 +138,22 @@
                     }
 
                     .carousel-item-description {
-                        right: 2%;
-                        top: 0%;
+                        right: 5%;
+                        top: 5%;
                     
-                        width: 96%;
-                        height: 35%;
+                        max-width: 25%;
+                        height: 90%;
 
-                        padding-top: 0%;
+                        
+                        padding: 0px;
+                        padding-top: 15%;
+                        text-align: center;
 
-                        font-size: 1.5em;
+                        font-size: 1em;
 
                         .detail {
                             position: relative;
+                            font-size: 1.7em;
                             bottom: .5em;
                         }
                         
@@ -143,25 +161,25 @@
                 }
 
                 .previous-item, .next-item {
-                    height: 10%;
-                    width: 50%;
+                    height: 100%;
+                    width: 7.5%;
 
-                    font-size: 4vh;
+                    font-size: 8vh;
                     color: transparentize($text-light-color, .5);
                     // border: 1px solid $text-light-color;
 
                     padding: 0;
-                    padding-top: .3em;
+                    padding-top: 25%;
                 }
 
                 .previous-item {
-                    text-align: left;
-                    padding-left: .5em;
+                    // text-align: left;
+                    // padding-left: .5em;
                 }
 
                 .next-item {
-                    text-align: right;
-                    padding-right: .5em;
+                    // text-align: right;
+                    // padding-right: .5em;
                 }
             }
         }
@@ -172,16 +190,26 @@
         height: 200vh;
         .contact-page-content {
             .contact-info {
-                top: 17.5vh;
-                top: 17.5vh;
-                left: 5%;
+                top: 2vh;
+                left: 2vh;
 
-                height: 35%;
-                width: 90%;
+                width: 80vw;
+                height: 96vh;
+
+                .logo {
+                    position: absolute;
+                    left: 5%;
+                    top: 25%;
+                    width: 40%;
+                }
 
                 .text {
+                    position: absolute;
+                    right: 5%;
+                    top: 15%;
+                    width: 45%;
                     p {
-                        font-size: 2.75vh;
+                        font-size: 5vh;
                     }
                 }
 
@@ -196,7 +224,7 @@
                     
                     text-align: center;
                     color: $text-light-color;
-                    font-size: 3vh;
+                    font-size: 5vh;
                     font-family: $font-plain;
                     padding: 1vh;
 
@@ -212,13 +240,14 @@
             .contact-form {
                 margin-top: -17.5vh;
                 bottom: 10vh;
-                left: 5%;
+                left: 2vh;
 
-                width: 90%;
-                height: 35%;
-                padding-top: 15%;
+                width: 80vw;
+                height: 88vh;
 
-                font-size: 2.5vh;
+                padding-top: 5%;
+
+                font-size: 4vh;
 
                 .back-to-contact {
                     display: block;
@@ -231,7 +260,7 @@
                     
                     text-align: center;
                     color: $text-light-color;
-                    font-size: 2vh;
+                    font-size: 3.5vh;
                     font-family: $font-plain;
                     padding: 1vh;
 
@@ -243,16 +272,43 @@
                     }
                 }
 
+                label {
+                    width: 35%;
+                    margin-bottom: .5em;
+                    margin-top: 0px;
+                    // display: inline-block;
+                    // text-align: right;
+
+                    &.vzkaz {
+                        position: absolute;
+                        left: 45%;
+                        top: 15%;
+                    }
+                }
+
+                input {
+                    width: 35%;
+                    margin-bottom: .5em;
+                    line-height: 2em;
+                    // display: inline-block;
+                    font-size: 3.5vh;
+                    height: auto;
+                }
+
                 input[type=submit] {
                     position: absolute;
                     bottom: 0px;
-                    left: 10%;
-
-                    width: 80%;
+                    right: 7.5%;
+                    left: auto;
+                    width: 45%;
                 }
 
                 textarea {
-                    height: 30%;
+                    position: absolute;
+                    top: calc(15% + 1.7em);
+                    right: 5%;
+                    width: 50%;
+                    height: 60%;
                 }
 
                 border: none;                
@@ -267,6 +323,12 @@
         .second-socials {
             display: block;
             bottom: 50.5%;
+        }
+
+        .page-footer {
+            .copyright {
+                font-size: 3vh;
+            }
         }
     }
 }
