@@ -711,7 +711,7 @@ a:hover {
     width: 96%;
     height: 35%;
     padding-top: 0%;
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   .portfolio-page-wrapper .portfolio-page-content .carousel-wrapper .carousel-item .carousel-item-description .detail {
     position: relative;
@@ -928,20 +928,20 @@ a:hover {
   .contact-page-wrapper .contact-page-content .contact-info {
     top: 2vh;
     left: 2vh;
-    width: 80vw;
+    width: 85vw;
     height: 96vh;
   }
   .contact-page-wrapper .contact-page-content .contact-info .logo {
     position: absolute;
     left: 5%;
-    top: 25%;
-    width: 40%;
+    top: 30%;
+    width: 35%;
   }
   .contact-page-wrapper .contact-page-content .contact-info .text {
     position: absolute;
     right: 5%;
     top: 15%;
-    width: 45%;
+    width: 50%;
   }
   .contact-page-wrapper .contact-page-content .contact-info .text p {
     font-size: 5vh;
